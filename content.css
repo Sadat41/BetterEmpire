@@ -1,0 +1,131 @@
+/* Main container for the pricing box */
+.buff-info-box {
+  background: linear-gradient(145deg, #1e1e2a, #252533); /* Sleek gradient background */
+  color: #dcdcdc;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px; /* Smaller text size */
+  padding: 15px;
+  border-radius: 12px; /* Smooth edges */
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Center-align all text */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.buff-info-box:hover {
+  transform: translateY(-5px) scale(1.02); /* Hover elevation */
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* More prominent shadow */
+  background: linear-gradient(145deg, #232334, #2c2c3f); /* Slightly brighter on hover */
+}
+
+/* Header for the pricing box */
+.buff-info-box .price-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Bright gold header */
+  text-shadow: 0 0 5px rgba(255, 204, 0, 0.8); /* Subtle glow */
+  letter-spacing: 1px; /* Spaced-out letters */
+}
+
+/* Animated underline for the header */
+.buff-info-box .price-header::after {
+  content: '';
+  display: block;
+  width: 50%;
+  margin: 5px auto;
+  height: 2px;
+  background: #ffcc00;
+  opacity: 0.8;
+  border-radius: 1px;
+}
+
+/* Price details */
+.buff-info-box p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Space between label and value */
+  align-items: center;
+}
+
+.buff-info-box .label {
+  font-size: 13px;
+  color: #b0b0b0; /* Subtle gray for labels */
+  flex: 1;
+  text-align: left;
+}
+
+.buff-info-box .value {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  flex: 1;
+  text-align: right;
+}
+
+/* Specific colors for prices */
+.buff-info-box .cs-empire-price {
+  color: #f1c40f; /* Yellow for CSEmpire price */
+}
+
+.buff-info-box .buff-price-usd {
+  color: #1abc9c; /* Green for Buff163 price */
+}
+
+.buff-info-box .csfloat-price-usd {
+  color: #3498db; /* Blue for CSFloat price */
+}
+
+/* Difference box with modern animation */
+.buff-info-box .difference-box {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer; /* Make it clickable */
+  position: relative; /* For hover effects */
+  overflow: hidden;
+}
+
+.buff-info-box .difference-box.positive {
+  color: #2ecc71; /* Green for positive difference */
+}
+
+.buff-info-box .difference-box.negative {
+  color: #e74c3c; /* Red for negative difference */
+}
+
+/* Difference box hover effect */
+.buff-info-box .difference-box:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6); /* Darker background on hover */
+}
+
+.buff-info-box .difference-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s ease;
+}
+
+.buff-info-box .difference-box:hover::after {
+  left: 100%; /* Swipe animation on hover */
+}
+
+/* Smooth glow for difference value */
+.buff-info-box .difference-value {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* Glow for green (positive) */
+}

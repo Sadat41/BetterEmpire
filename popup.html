@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetterEmpire</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="logo">
+        <img src="logo.png" alt="BetterEmpire Logo">
+      </div>
+      <h1>BetterEmpire</h1>
+      <p>Version 1.0</p>
+    </header>
+
+    <main class="popup-main">
+      <div class="toggle-container">
+        <p id="status-label">Disabled</p>
+        <div class="toggle-button">
+          <input type="checkbox" id="extension-toggle">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <p id="slider-value">Transparency: 100%</p>
+        <input type="range" id="slider" min="50" max="100" value="100">
+      </div>
+
+      <div class="settings">
+        <p>Settings:</p>
+        <div class="setting-item">
+          <label for="big-previews">Show Big Previews</label>
+          <input type="checkbox" id="big-previews">
+        </div>
+        <div class="setting-item">
+          <label for="hide-bar">Hide Floating Bar</label>
+          <input type="checkbox" id="hide-bar">
+        </div>
+        <div class="setting-item">
+          <label for="fix-layout">Fix Layout</label>
+          <input type="checkbox" id="fix-layout">
+        </div>
+      </div>
+    </main>
+
+    <footer class="popup-footer">
+      <button id="save-settings">Save Settings</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
