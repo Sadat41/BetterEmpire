@@ -1,6 +1,8 @@
 ## 📚 Overview
 BetterEmpire aims to make trading on CS:GO Empire more efficient by providing a robust set of features that enhance the overall experience of skin trading. This extension integrates powerful tools to simplify decision-making and track key metrics.
 
+I'm still working on it and it will take sometime, but it works in a closed system for now. You will need to run the `buff_server_v2` and `csfloat_server_v2` to fetch pricing data from the sites. For Buff you would need access to Buff's cookie and for CSFloat you will need access to the API key.
+
 ## Key Features
 Advanced Filters: Narrow down search results to find the perfect trades.
 Price Tracking: Stay updated on market trends with real-time price insights.
