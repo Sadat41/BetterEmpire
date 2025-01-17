@@ -7,8 +7,8 @@ from urllib.parse import quote_plus
 app = Flask(__name__)
 CORS(app)
 
-# CSFloat API configuration
-CSFLOAT_API_KEY = "Your_Token_Here"
+# CSFloat API configuration 
+CSFLOAT_API_KEY = "Your_Token_Here" # You'll have to generate API token from csfloat
 CSFLOAT_API_URL = "https://csfloat.com/api/v1/listings"
 
 
