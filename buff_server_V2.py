@@ -9,7 +9,7 @@ CORS(app)  # Enable CORS for all routes
 
 # Buff163 API setup
 cookie = (
-    "Your_Buff_Cookie_Here"
+    "Your_Buff_Cookie_Here" #Lookup online how to obtain Buff key
 )
 buff163api = Buff163API(session_cookie=cookie)
 
