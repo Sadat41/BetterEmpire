@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Align to container width */
+  width: 100%; 
   margin-bottom: 20px;
 }
 
@@ -88,9 +88,9 @@ body {
 }
 
 .slider-container {
-  width: 100%; /* Match container width */
+  width: 100%; 
   margin-bottom: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .slider-container p {
@@ -118,7 +118,7 @@ body {
 }
 
 .settings {
-  width: 100%; /* Align settings to container */
+  width: 100%; 
 }
 
 .settings p {
