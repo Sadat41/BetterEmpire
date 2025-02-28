@@ -27,9 +27,9 @@ def fetch_csfloat_price():
 
         # Make the API request
         response = requests.get(api_url, headers={"Authorization": CSFLOAT_API_KEY})
-        response.raise_for_status()  # Raise error for HTTP issues
+        response.raise_for_status() 
 
-        # Parse the response
+        # Parsing
         data = response.json().get("data", [])
         if not data:
             print(f"No listings found for: {market_hash_name}")
@@ -37,7 +37,7 @@ def fetch_csfloat_price():
 
         # Find the lowest price listing
         lowest_price_listing = min(data, key=lambda x: x["price"])
-        price = lowest_price_listing["price"] / 100  # Convert cents to USD
+        price = lowest_price_listing["price"] / 100 
         float_value = lowest_price_listing["item"].get("float_value", "N/A")
         inspect_link = lowest_price_listing["item"].get("inspect_link", "N/A")
 
@@ -53,6 +53,6 @@ def fetch_csfloat_price():
         return jsonify({"error": str(e)}), 500
 
 
-# Run the Flask app
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)  # Run on a different port (5001)
