@@ -144,7 +144,7 @@ function updatePriceBox(item, csEmpirePriceText, buffData, csFloatData, marketHa
 async function processItems() {
   const items = document.querySelectorAll('[data-testid="item-card-enabled"]');
 
-  const processedItems = new Map(); // Track processed items to avoid duplicates
+  const processedItems = new Map(); 
 
   for (const item of items) {
     const itemType = item.querySelector('[data-testid="item-card-item-type"]')?.textContent.trim() || "Unknown Type";
@@ -195,10 +195,10 @@ async function processItems() {
         fetchCSFloatPrice(marketHashName),
       ]);
 
-      // Update the item with fetched data
+      
       const priceBoxContent = updatePriceBox(item, csEmpirePriceText, buffData, csFloatData, marketHashName);
 
-      // Cache the rendered content for duplicates
+      
       processedItems.set(marketHashName, priceBoxContent);
     } catch (error) {
       console.error(`Error fetching price for ${marketHashName}:`, error);
@@ -206,7 +206,7 @@ async function processItems() {
   }
 }
 
-// Inject styles dynamically into the page
+
 function injectStyles() {
   const style = document.createElement("style");
   style.textContent = `
@@ -215,7 +215,7 @@ function injectStyles() {
   document.head.appendChild(style);
 }
 
-// Load cache on script initialization
+
 loadCache();
 
 // Observe DOM changes for dynamically loaded or updated items
@@ -225,7 +225,7 @@ const observer = new MutationObserver(() => {
 
 observer.observe(document.body, { childList: true, subtree: true });
 
-// Initial execution and visibility change handling
+
 injectStyles();
 processItems();
 document.addEventListener("visibilitychange", () => {
