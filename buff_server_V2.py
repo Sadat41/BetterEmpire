@@ -5,7 +5,7 @@ from time import time
 
 # Flask app setup
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)  
 
 # Buff163 API setup
 cookie = (
@@ -15,7 +15,7 @@ buff163api = Buff163API(session_cookie=cookie)
 
 # In-memory cache
 cache = {}
-cache_ttl = 300  # Cache time-to-live in seconds
+cache_ttl = 300  
 
 def get_from_cache(market_hash_name):
     """Retrieve cached response if not expired."""
