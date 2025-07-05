@@ -1,4 +1,4 @@
-## 📚 Overview
+##  Overview
 BetterEmpire aims to make trading on CS:GO Empire more efficient by providing a robust set of features that enhance the overall experience of skin trading. This extension integrates powerful tools to simplify decision-making and track key metrics.
 
 I'm still working on it and it will take sometime, but it works in a closed system for now. You will need to run the `buff_server_v2` and `csfloat_server_v2` to fetch pricing data from the sites. For Buff you would need access to Buff's cookie and for CSFloat you will need access to the API key.
@@ -10,7 +10,7 @@ Historical Data: View historical price trends to make informed trading decisions
 User-Friendly Interface: A seamless experience designed for all traders.
 Real-Time Notifications: Get updates for profitable trades without delay.
 
-## 🚀 Installation
+##  Installation
 Prerequisites
 Google Chrome or a Chromium-based browser.
 Basic familiarity with installing Chrome extensions.
@@ -26,18 +26,18 @@ Enable Developer Mode.
 
 Click Load unpacked and select the cloned projectt folder.
 
-## 🛠️ Usage
+##  Usage
 Open the CS:GO Empire site.
 Use the extension to filter and sort listings as per your preferences.
 Monitor real-time data to make profitable trading decisions.
 
-## ⚙️ Configuration
+## ⚙ Configuration
 You can customize the extension’s behavior by modifying the configuration files:
 
 manifest.json: Adjust permissions or update metadata.
 content.js: Modify how the extension interacts with the CS:GO Empire page.
 
-## 📋 Contribution
+##  Contribution
 Contributions are welcome! To contribute:
 
 Fork the repository.
