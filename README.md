@@ -1,3 +1,6 @@
+## I've moved the repo to: https://github.com/Sadat41/Empire-Enhanced
+
+
 ##  Overview
 BetterEmpire aims to make trading on CS:GO Empire more efficient by providing a robust set of features that enhance the overall experience of skin trading. This extension integrates powerful tools to simplify decision-making and track key metrics.
 
